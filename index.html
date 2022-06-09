@@ -12,14 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom ctyles -->
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> 
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  Custom ctyles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -222,7 +225,7 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-left" data-aos-duration="300">
               <img
                 class="team-img"
                 src="./images/team/teamcard1.jpg"
@@ -288,7 +291,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-left" data-aos-duration="600">
               <img
                 class="team-img"
                 src="./images/team/teamcard2.jpg"
@@ -354,7 +357,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-left" data-aos-duration="900">
               <img
                 class="team-img"
                 src="./images/team/teamcard3.jpg"
@@ -420,7 +423,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-left" data-aos-duration="1200">
               <img
                 class="team-img"
                 src="./images/team/teamcard4.jpg"
@@ -669,5 +672,8 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <!-- AOS animation library  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>

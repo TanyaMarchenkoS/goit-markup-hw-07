@@ -191,6 +191,23 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+.hero .hero__title {
+  animation: fade-top-to-botton 1s;
+}
+
+@keyframes fade-top-to-botton {
+  from {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Кнопка */
 .hero__button {
   font-weight: 700;
@@ -397,10 +414,10 @@ ul {
   opacity: 0;
   transition: opacity var(--anim-duration) var(--timing-anim);
 }
-.checkbox__input:checked + .checbox__custom  {
+.checkbox__input:checked + .checbox__custom {
   outline: var(--accent-color);
 }
-.checkbox__input:checked + .checbox__custom  .checbox__icon {
+.checkbox__input:checked + .checbox__custom .checbox__icon {
   opacity: 1;
 }
 .checkbox__policy {
@@ -511,7 +528,15 @@ ul {
   bottom: 0;
   left: 0;
 }
-
+.work__list {
+  overflow: hidden;
+}
+.work__img {
+  transition: transform var(--anim-duration) var(--timing-anim);
+}
+.work .work__list:hover .work__img {
+  transform: scale(1.15);
+}
 /* команда */
 .team {
   color: var(--second-txt-cl);

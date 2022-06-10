@@ -99,6 +99,7 @@ ul {
 }
 .navigation__link.current {
   color: var(--accent-color);
+  position: relative;
 }
 .navigation__link.current::after {
   content: '';
@@ -110,10 +111,6 @@ ul {
   position: absolute;
   bottom: -1px;
   left: 0;
-}
-
-.navigation__link.current {
-  position: relative;
 }
 
 /* контакти */
@@ -141,7 +138,23 @@ ul {
 .contact__tel:focus {
   color: var(--accent-color);
 }
-.contact__mailto,
+.contact__mailto {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: var(--anim-duration);
+  transition-timing-function: var(--timing-anim);
+}
+
 .contact__tel {
   font-weight: 500;
   font-size: 14px;
@@ -246,7 +259,7 @@ ul {
   pointer-events: none;
   visibility: hidden;
 }
-.modal__wrapper {
+.modal-wrapper {
   background-color: #ffffff;
   width: 528px;
   height: 581px;
@@ -257,10 +270,9 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
-
 }
 
-.modal__btn {
+.modal-btn {
   position: absolute;
   display: flex;
   top: 8px;
@@ -276,15 +288,15 @@ ul {
   height: 30px;
 }
 
-.modal__icon {
+.modal-icon {
   display: block;
   align-items: center;
   justify-content: center;
   color: var(--second-txt-cl);
   transition: fill var(--anim-duration) var(--timing-anim);
 }
-.modal__icon:hover,
-.modal__icon:focus {
+.modal-icon:hover,
+.modal-icon:focus {
   fill: var(--accent-color);
 }
 /* форма */
@@ -343,8 +355,8 @@ ul {
   fill: var(--second-txt-cl);
   transition: fill var(--anim-duration) var(--timing-anim);
 }
-.form__field:hover .form-modal-icon,
-.form__field:focus .form-modal-icon {
+.form__field:hover .form__modal-icon,
+.form__field:focus .form__modal-icon {
   fill: var(--accent-color);
 }
 
@@ -512,7 +524,7 @@ ul {
   margin-right: 0;
 }
 
-.work__item .work__text {
+.work__text {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);

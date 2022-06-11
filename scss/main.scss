@@ -19,8 +19,13 @@
 @import './components/_forms.scss/form-footer';
 @import './components/card-overlay';
 
-
-
-
 // layouts
-@import './layouts/hero' 
+@import './layouts/navigation';
+@import './layouts/contacts';
+@import './layouts/hero';
+@import './layouts/specifics';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/address';
+@import './layouts/portfolio';

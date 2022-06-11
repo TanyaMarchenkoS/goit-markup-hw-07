@@ -1,7 +1,10 @@
 :root {
+  /* color */
   --main-txt-cl: #757575;
   --second-txt-cl: #212121;
   --accent-color: #2196f3;
+  --white-cl: #ffffff;
+  /* card-set */
   --card-set-qap: 30px;
   /* animation */
   --timing-anim: cubic-bezier(0.4, 0, 0.2, 1);
@@ -10,7 +13,7 @@
 /* Главная */
 body {
   color: var(--main-txt-cl);
-  background-color: #ffffff;
+  background-color: var(--white-cl);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -226,7 +229,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: #ffffff;
+  color: var(--white-cl);
   background-color: var(--accent-color);
   font-family: inherit;
   cursor: pointer;
@@ -260,7 +263,7 @@ ul {
   visibility: hidden;
 }
 .modal-wrapper {
-  background-color: #ffffff;
+  background-color: var(--white-cl);
   width: 528px;
   height: 581px;
   position: absolute;
@@ -282,7 +285,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--white-cl);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -446,7 +449,7 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-cl);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -531,7 +534,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: var(--white-cl);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -567,7 +570,7 @@ ul {
   margin-bottom: 50px;
 }
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--white-cl);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -611,7 +614,7 @@ ul {
   width: 44px;
   height: 44px;
 
-  background-color: #ffffff;
+  background-color: var(--white-cl);
   border-radius: 50%;
 
   transition: background-color var(--anim-duration) var(--timing-anim);
@@ -622,7 +625,7 @@ ul {
 }
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  fill: #ffffff;
+  fill: var(--white-cl);
 }
 .socials-item:not(:last-child) {
   margin-right: 10px;
@@ -701,14 +704,14 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-cl);
 }
 .address {
   margin-top: 20px;
 }
 .footer-address {
   font-family: 'Roboto';
-  color: #ffffff;
+  color: var(--white-cl);
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -761,7 +764,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-cl);
   margin-bottom: 20px;
 }
 .footer-icons {
@@ -786,14 +789,14 @@ ul {
 }
 .socials-links:hover,
 .socials-links:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color); 
 }
 
 .list-icon:not(:last-child) {
   margin-right: 10px;
 }
 .socials-icons {
-  fill: #ffffff;
+  fill: var(--white-cl);
 }
 
 /* Подпишитесь на рассылку футер */
@@ -841,7 +844,7 @@ ul {
   padding-left: 26px;
   padding-bottom: 10px;
   padding-left: 29px;
-  color: #ffffff;
+  color: var(--white-cl);
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -904,7 +907,7 @@ button {
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  color: #ffffff;
+  color: var(--white-cl);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -961,7 +964,7 @@ button {
 
 .card-link:hover,
 .card-link:focus {
-  background: #ffffff;
+  background: var(--white-cl);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1008,5 +1011,5 @@ button {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-cl);
 }

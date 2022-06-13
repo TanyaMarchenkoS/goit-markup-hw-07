@@ -42,9 +42,10 @@
 .clients-icon {
     fill: #afb1b8;
     transition: fill var(--anim-duration) var(--timing-anim);
+
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: #2196f3;
+    }
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: #2196f3;
-}

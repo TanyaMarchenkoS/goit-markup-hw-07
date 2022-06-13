@@ -23,12 +23,8 @@
         background-color: #2196f3;
     }
 
-    &:hover .socials-icon,
-    &:focus .socials-icon {
-     fill: var(--white-cl);
-    }
+   
 }
-
 
 .socials-item:not(:last-child) {
     margin-right: 10px;
@@ -37,6 +33,11 @@
 .socials-icon {
     fill: #afb1b8;
     transition: fill var(--anim-duration) var(--timing-anim);
+
+    .socials-link:hover &,
+    .socials-link:focus & {
+        fill: var(--white-cl);
+    }
 }
 
 /* Соц. сети icons Footer  */

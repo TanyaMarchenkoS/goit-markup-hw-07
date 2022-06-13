@@ -1,9 +1,9 @@
 /* Чем мы занимаемся */
-.work {
+section--not {
     padding-top: 0;
 }
 
-.work__title {
+.section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -13,12 +13,12 @@
     text-align: center;
 }
 
-.work__item {
+.work {
     display: flex;
     position: relative;
 }
 
-.work__list {
+.work__item {
     margin-right: 30px;
     position: relative;
     overflow: hidden;
@@ -50,6 +50,6 @@
 .work__img {
     transition: transform var(--anim-duration) var(--timing-anim);
 }
-.work .work__list:hover .work__img {
+.section .work__item:hover .work__img {
     transform: scale(1.15);
-}
+} 

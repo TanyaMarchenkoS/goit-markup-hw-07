@@ -959,7 +959,7 @@ button {
 }
 
 /* Чем мы занимаемся */
-section--not {
+.section--padding-top {
   padding-top: 0;
 }
 
